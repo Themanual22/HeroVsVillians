@@ -1,7 +1,7 @@
-fetchHero()
-function fetchHero(){
-fetch('https://biriyani.anoram.com/get')
-.then (res => res.json())
-.then (data => console.log(data))
-
-}
+fetch("https://superhero-search.p.rapidapi.com/api/heroes")
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
