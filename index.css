@@ -11,7 +11,8 @@ h1 {
   margin-right: 10px;
 }
 
-h2 {
+
+h3 {
   font-family: "Bangers", cursive;
   font-size: 25px;
   align-items: center;
@@ -21,6 +22,13 @@ h2 {
   border: 1px solid black;
   padding: 10px;
   margin-left: 10px;
+}
+
+#villain-display.displayed{
+    font-family: "Bangers", cursive;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {

@@ -61,6 +61,7 @@ function renderVillains(villainArray){
 		villainList.append(villainLi)
 
 		villainLi.addEventListener("click", function(){
+			
 			loadVillain(villain)
 		})
 		
@@ -82,13 +83,15 @@ loadPage()
 		
     }
     function loadVillain(displayVillain){
-		//console.log(displayVillain)
-		const villainDisplayId = document.getElementById("villain-image")
-		const villainImgDisplay = document.createElement("img")
-		villainImgDisplay.setAttribute("src", displayVillain.images.lg)
-		villainImgDisplay.setAttribute("id", displayVillain.id)
-		villainDisplayId.append(villainImgDisplay)
+		console.log(displayVillain)
 
+		//const villainDisplayId = document.getElementById("villain-display")
+		const villainImgDisplay = document.querySelector(".villain-image")
+		const villainNameDisplay = document.querySelector(".villain-name")
+		villainNameDisplay.innerText = displayVillain.name
+		villainImgDisplay.setAttribute("src", displayVillain.images.md)
+		villainImgDisplay.setAttribute("id", displayVillain.id)
+		
     }
 
     function Likebutton(){
