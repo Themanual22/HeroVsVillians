@@ -1,0 +1,10 @@
+header {
+    float: left;
+    width: 225px;
+    height: 1000px;
+    border:1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  /*li{}*/
