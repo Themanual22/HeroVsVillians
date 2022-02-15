@@ -83,6 +83,7 @@ loadPage()
 
 
 	function loadHero(displayHero){
+		
 		const heroImgDisplay = document.querySelector(".hero-image")
 		const heroNameDisplay = document.querySelector(".hero-name")
 		heroNameDisplay.innerText = displayHero.name
@@ -103,4 +104,29 @@ loadPage()
 
     function Likebutton(){
         
-    }
+    
+
+	/*const heroSearchId = document.getElementById('hero-search')
+
+	heroSearchId.addEventListener("submit",function(event){
+		event.preventDefault()
+		heroSearch()
+	})
+	function heroSearch(){
+		const heroSearchName = document.getElementById("hero-search").value 
+		console.log(heroSearchName)
+
+
+		fetch(`https://superhero-search.p.rapidapi.com/api/?hero=${heroSearchName}`, {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "superhero-search.p.rapidapi.com",
+			"x-rapidapi-key": "3fe5a2eed0msh72c15333815d476p14b3c3jsn112bff9aa40a"
+		}
+		})
+		.then(response => response.json())
+		.then(data => console.log(data))
+
+	}
+	*/
+}
