@@ -13,7 +13,7 @@ fetch("https://superhero-search.p.rapidapi.com/api/heroes",{
 }
 
 function renderHeros(heroArray){
-	//console.log(charArray)
+	//console.log(heroArray)
 	const heroList = document.getElementById('hero-list')
 	heroArray.forEach(hero => {
 		
@@ -46,7 +46,7 @@ fetch("https://superhero-search.p.rapidapi.com/api/villains", {
 }
 
 function renderVillains(villainArray){
-	//console.log(charArray)
+	console.log(villainArray)
 	const villainList = document.getElementById('villain-list')
 	villainArray.forEach(villain => {
 		
@@ -58,8 +58,11 @@ function renderVillains(villainArray){
 		villainImg.setAttribute("id", villain.name)
 
 		villainLi.append(villainImg)
-		
 		villainList.append(villainLi)
+
+		villainLi.addEventListener("click", function(){
+			loadVillain(villain)
+		})
 		
 	})
 }
@@ -73,10 +76,18 @@ loadPage()
 });
 
 //basically we want to write 2 functions that grab a random send it to the spaces we decide in the browswer:
-    function loadHero(){
 
+
+	function loadHero(){
+		
     }
-    function loadvillian(){
+    function loadVillain(displayVillain){
+		//console.log(displayVillain)
+		const villainDisplayId = document.getElementById("villain-image")
+		const villainImgDisplay = document.createElement("img")
+		villainImgDisplay.setAttribute("src", displayVillain.images.lg)
+		villainImgDisplay.setAttribute("id", displayVillain.id)
+		villainDisplayId.append(villainImgDisplay)
 
     }
 
