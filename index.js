@@ -25,8 +25,11 @@ function renderHeros(heroArray){
 		heroImg.setAttribute("id", hero.name)
 
 		heroLi.append(heroImg)
-		
 		heroList.append(heroLi)
+
+		heroLi.addEventListener("click", function(){
+			loadHero(hero)
+		})
 		
 	})
 }
@@ -79,8 +82,12 @@ loadPage()
 //basically we want to write 2 functions that grab a random send it to the spaces we decide in the browswer:
 
 
-	function loadHero(){
-		
+	function loadHero(displayHero){
+		const heroImgDisplay = document.querySelector(".hero-image")
+		const heroNameDisplay = document.querySelector(".hero-name")
+		heroNameDisplay.innerText = displayHero.name
+		heroImgDisplay.setAttribute("src", displayHero.images.md)
+		heroImgDisplay.setAttribute("id", displayHero.id)
     }
     function loadVillain(displayVillain){
 		console.log(displayVillain)
