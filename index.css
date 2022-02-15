@@ -98,7 +98,7 @@ p.header {
   text-shadow: 2px 2px blue;
   text-align: center;
   color: white;
-  background-color: ;
+  background-color: null;
 }
 
 div {
