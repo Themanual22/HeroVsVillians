@@ -11,10 +11,9 @@ h1 {
   margin-right: 10px;
 }
 
-
 h3 {
   font-family: "Bangers", cursive;
-  font-size: 25px;
+  font-size: 30px;
   align-items: center;
   float: right;
   width: 225px;
@@ -24,27 +23,25 @@ h3 {
   margin-left: 10px;
 }
 
-#villain-display{
-    font-family: "Bangers", cursive;
-    font-size: 30px;
-    width: 320px;
-    height: 550px;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
+#villain-display {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  width: 320px;
+  height: 550px;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  #hero-display{
-    font-family: "Bangers", cursive;
-    font-size: 30px;
-    width: 320px;
-    height: 550px;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+#hero-display {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  width: 320px;
+  height: 550px;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 p {
   font-family: "Bangers", cursive;
