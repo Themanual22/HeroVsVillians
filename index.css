@@ -1,8 +1,31 @@
 /*body{}*/
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+
+body {
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  font: 5vh Lora;
+}
+
+a {
+  color: rgba(34, 34, 34, 0.667);
+  text-decoration: #2224 wavy underline;
+  transition: all 0.3s;
+  &:hover {
+    color: #2223;
+    text-shadow: 0 0 100px #333;
+  }
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+}
 
 h1 {
   font-family: "Bangers", cursive;
-  font-size: 25px;
+  font-size: 30px;
   float: left;
   width: 225px;
   height: 1200px;
@@ -11,10 +34,9 @@ h1 {
   margin-right: 10px;
 }
 
-
 h3 {
   font-family: "Bangers", cursive;
-  font-size: 25px;
+  font-size: 30px;
   align-items: center;
   float: right;
   width: 225px;
@@ -23,28 +45,30 @@ h3 {
   padding: 10px;
   margin-left: 10px;
 }
+h4 {
+  font-family: "Bangers", cursive;
+  font-size: 45px;
+}
 
-#villain-display{
-    font-family: "Bangers", cursive;
-    font-size: 30px;
-    width: 320px;
-    height: 550px;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
+#villain-display {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  width: 320px;
+  height: 550px;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  #hero-display{
-    font-family: "Bangers", cursive;
-    font-size: 30px;
-    width: 320px;
-    height: 550px;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+#hero-display {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  width: 320px;
+  height: 550px;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 p {
   font-family: "Bangers", cursive;
