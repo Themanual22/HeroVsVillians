@@ -16,7 +16,7 @@ body {
 Img {
   border-radius: 50px;
   width: 5;
-  height: 5;
+  height: 7;
 }
 h1 {
   font-family: "Bangers", cursive;
@@ -104,6 +104,6 @@ p.header {
 div {
   border: 10px solid white;
   border-radius: 50px;
-  width: 320px;
-  border-height: 400px;
+  width: 340px;
+  height: 400px;
 }
