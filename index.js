@@ -72,8 +72,14 @@ loadPage()
 
 });
 
+//basically we want to write 2 functions that grab a random send it to the spaces we decide in the browswer:
+    function loadHero(){
 
+    }
+    function loadvillian(){
 
+    }
 
-
-
+    function Likebutton(){
+        
+    }
