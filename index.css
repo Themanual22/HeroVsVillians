@@ -1,41 +1,41 @@
-/*body{}*/
-@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
-
 body {
-  justify-content: center;
-  align-content: center;
+  margin: 0;
   height: 100vh;
-  font: 5vh Lora;
+  font-weight: 100;
+  background: radial-gradient(#a23982, #1f1013);
+  -webkit-overflow-y: hidden;
+  -moz-overflow-y: hidden;
+  -o-overflow-y: hidden;
+  overflow-y: hidden;
+  -webkit-animation: fadeIn 1 1s ease-out;
+  -moz-animation: fadeIn 1 1s ease-out;
+  -o-animation: fadeIn 1 1s ease-out;
+  animation: fadeIn 1 1s ease-out;
 }
 
-a {
-  color: rgba(34, 34, 34, 0.667);
-  text-decoration: #2224 wavy underline;
-  transition: all 0.3s;
-  &:hover {
-    color: #2223;
-    text-shadow: 0 0 100px #333;
-  }
+Img {
+  border-radius: 50px;
+  width: 5;
+  height: 5;
 }
-
-canvas {
-  position: fixed;
-  z-index: -1;
-}
-
 h1 {
   font-family: "Bangers", cursive;
+  color: white;
+  text-shadow: 2px 2px blue;
+  text-shadow: blue, 13;
   font-size: 30px;
   float: left;
   width: 225px;
   height: 1200px;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 10px;
   margin-right: 10px;
 }
 
 h3 {
   font-family: "Bangers", cursive;
+  color: white;
+  text-shadow: 2px 2px blue;
   font-size: 30px;
   align-items: center;
   float: right;
@@ -46,8 +46,26 @@ h3 {
   margin-left: 10px;
 }
 h4 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px blue;
   font-family: "Bangers", cursive;
   font-size: 45px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px blue;
+  font-family: "Bangers", cursive;
+  font-size: 45px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 #villain-display {
@@ -72,6 +90,13 @@ h4 {
 
 p {
   font-family: "Bangers", cursive;
-  text-align: center;
+  float: center;
   font-size: 50px;
+}
+p.header {
+  position: relative;
+  text-shadow: 2px 2px blue;
+  text-align: center;
+  color: white;
+  background-color: null;
 }

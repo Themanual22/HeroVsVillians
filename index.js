@@ -132,6 +132,7 @@ loadPage()
 }
     
 
+<<<<<<< HEAD
     console.clear();
 const canvas = document.createElement('canvas');
 document.body.append(canvas);
@@ -286,3 +287,5 @@ document.body.onmousemove = (e) => {
     gl.bufferSubData(gl.ARRAY_BUFFER, 0, ps.slice(0, 2)); // that's why DYNAMIC_DRAW
     f();
 } 
+=======
+>>>>>>> f821677dd877e05782035757d29a21825a785442
