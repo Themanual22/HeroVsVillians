@@ -1,6 +1,7 @@
 /*body{}*/
 
 h1 {
+  font-family: "Bangers", cursive;
   font-size: 25px;
   float: left;
   width: 225px;
@@ -11,6 +12,7 @@ h1 {
 }
 
 h2 {
+  font-family: "Bangers", cursive;
   font-size: 25px;
   align-items: center;
   float: right;
@@ -22,6 +24,7 @@ h2 {
 }
 
 p {
+  font-family: "Bangers", cursive;
   text-align: center;
   font-size: 50px;
 }
