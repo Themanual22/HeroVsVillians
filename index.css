@@ -21,6 +21,7 @@ Img {
 h1 {
   font-family: "Bangers", cursive;
   color: white;
+  text-shadow: 2px 2px blue;
   text-shadow: blue, 13;
   font-size: 30px;
   float: left;
@@ -34,6 +35,7 @@ h1 {
 h3 {
   font-family: "Bangers", cursive;
   color: white;
+  text-shadow: 2px 2px blue;
   font-size: 30px;
   align-items: center;
   float: right;
@@ -45,13 +47,25 @@ h3 {
 }
 h4 {
   color: white;
+  text-align: center;
+  text-shadow: 2px 2px blue;
   font-family: "Bangers", cursive;
   font-size: 45px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 h2 {
+  text-align: center;
   color: white;
+  text-shadow: 2px 2px blue;
   font-family: "Bangers", cursive;
   font-size: 45px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 #villain-display {
@@ -81,6 +95,7 @@ p {
 }
 p.header {
   position: relative;
+  text-shadow: 2px 2px blue;
   text-align: center;
   color: white;
   background-color: ;
