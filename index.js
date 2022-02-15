@@ -9,13 +9,13 @@ fetch("https://superhero-search.p.rapidapi.com/api/heroes",{
 	}
 })
 .then(response => response.json())
-.then(data => renderCharacters(data))
+.then(data => renderHeros(data))
 }
 
-function renderCharacters(charArray){
-	console.log(charArray)
+function renderHeros(heroArray){
+	//console.log(charArray)
 	const heroList = document.getElementById('hero-list')
-	charArray.forEach(hero => {
+	heroArray.forEach(hero => {
 		
 		const heroLi = document.createElement('li')
 		heroLi.textContent = hero.name
@@ -28,11 +28,48 @@ function renderCharacters(charArray){
 		
 		heroList.append(heroLi)
 		
-		console.log(heroLi)
 	})
 }
 
-fetchHeros()
+
+
+function fetchVillains(){
+fetch("https://superhero-search.p.rapidapi.com/api/villains", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "superhero-search.p.rapidapi.com",
+		"x-rapidapi-key": "3fe5a2eed0msh72c15333815d476p14b3c3jsn112bff9aa40a"
+	}
+})
+.then(response => response.json())
+.then(data => renderVillains(data))
+}
+
+function renderVillains(villainArray){
+	//console.log(charArray)
+	const villainList = document.getElementById('villain-list')
+	villainArray.forEach(villain => {
+		
+		const villainLi = document.createElement('li')
+		villainLi.textContent = villain.name
+		
+		const villainImg = document.createElement('img')
+		villainImg.setAttribute("src",villain.images.xs)
+		villainImg.setAttribute("id", villain.name)
+
+		villainLi.append(villainImg)
+		
+		villainList.append(villainLi)
+		
+	})
+}
+
+function loadPage(){
+	fetchHeros()
+	fetchVillains()
+}
+loadPage()
+
 });
 
 
