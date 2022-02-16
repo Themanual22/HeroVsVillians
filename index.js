@@ -83,11 +83,11 @@ loadPage()
 
 
 	function loadHero(displayHero){
-		const heroStats = displayHero.powerstats
-        const heroStatsId = querySelector(".hero-stats")
-        let (stat in heroStats); {
-            heroStatsId.innerText = `${stat} = ${heroStats[stat]}`
-        }
+		// const heroStats = displayHero.powerstats
+        // const heroStatsId = querySelector(".hero-stats")
+        // let (stat in `.heroStats`); {
+        //     heroStatsId.innerText = stat[".hero-stats"] ///this is where we are:
+        
 
 		const heroImgDisplay = document.querySelector(".hero-image")
 		const heroNameDisplay = document.querySelector(".hero-name")
