@@ -5,6 +5,20 @@ body {
   background: radial-gradient(#a23982, #1f1013);
 }
 
+li {
+  font-size: 25px;
+  letter-spacing: 5;
+  text-align: left;
+}
+
+Img {
+  position: relative;
+  border-radius: 55px;
+  width: 5;
+  height: 7;
+  margin: 5px;
+  vertical-align: middle;
+}
 h1 {
   text-align: center;
   position: relative;
@@ -22,24 +36,10 @@ h1 {
   margin-right: 10px;
 }
 
-li {
-  font-size: 25px;
-  letter-spacing: 5;
-  text-align: left;
-}
-
-Img {
-  position: relative;
-  border-radius: 55px;
-  width: 5;
-  height: 7;
-  margin: 5px;
-  vertical-align: middle;
-}
-
 h3 {
   float: right;
-  position: fixed -100;
+  position: relative;
+  top: -40px;
   text-align: center;
   font-family: "Bangers", cursive;
   color: white;
@@ -54,6 +54,7 @@ h3 {
 }
 
 h4 {
+  float: right;
   color: white;
   text-shadow: 2px 2px blue;
   font-family: "Bangers", cursive;
@@ -63,6 +64,7 @@ h4 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 h2 {
   color: white;
   text-shadow: 2px 2px blue;
@@ -77,11 +79,11 @@ h2 {
 p {
   font-family: "Bangers", cursive;
   float: center;
-  font-size: 50px;
+  font-size: 65px;
 }
 p.header {
   position: relative;
-  text-shadow: 2px 2px blue;
+  text-shadow: 4px 4px blue;
   text-align: center;
   color: white;
   background-color: null;
