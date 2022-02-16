@@ -60,6 +60,9 @@ function renderVillains(villainArray){
 		villainImg.setAttribute("src",villain.images.xs)
 		villainImg.setAttribute("id", villain.name)
 
+		//villainLi.style.listStyleImage = villain.image.xs
+		
+
 		villainLi.append(villainImg)
 		villainList.append(villainLi)
 
@@ -98,6 +101,7 @@ loadPage()
 		const villainNameDisplay = document.querySelector(".villain-name")
 		villainNameDisplay.innerText = displayVillain.name
 		villainImgDisplay.setAttribute("src", displayVillain.images.md)
+
 		villainImgDisplay.setAttribute("id", displayVillain.id)
 		
     }
@@ -132,7 +136,6 @@ loadPage()
 }
     
 
-<<<<<<< HEAD
     console.clear();
 const canvas = document.createElement('canvas');
 document.body.append(canvas);
@@ -287,5 +290,3 @@ document.body.onmousemove = (e) => {
     gl.bufferSubData(gl.ARRAY_BUFFER, 0, ps.slice(0, 2)); // that's why DYNAMIC_DRAW
     f();
 } 
-=======
->>>>>>> f821677dd877e05782035757d29a21825a785442
