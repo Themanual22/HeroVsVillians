@@ -6,6 +6,7 @@ body {
 }
 
 h1 {
+  position: relative;
   text-align: center;
   font-family: "Bangers", cursive;
   color: white;
@@ -23,16 +24,30 @@ h1 {
 
 li {
   font-size: 25px;
-  letter-spacing: 3;
+  letter-spacing: 5;
   text-align: left;
 }
 
+Img {
+  border-radius: 55px;
+  width: 5;
+  height: 7;
+  margin: 5px;
+  vertical-align: middle;
+}
 div {
+  /* position: relative;
+  left: 200px; */
   border: 15px solid white;
   border-radius: 50px;
+  float: left;
+  inline
+  /* float:right; */
   width: 340px;
   height: 400px;
   animation: pulse 5s infinite;
+}
+div#villian-display {
 }
 @keyframes pulse {
   0% {
@@ -41,13 +56,6 @@ div {
   100% {
     background-color: #ff4136;
   }
-}
-Img {
-  border-radius: 55px;
-  width: 5;
-  height: 7;
-  margin: 5px;
-  vertical-align: middle;
 }
 
 h3 {
@@ -95,19 +103,21 @@ h2 {
   font-size: 30px;
   width: 320px;
   height: 550px;
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
+  /* float: right; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  grid: block;
 }
 
 #hero-display {
   color: goldenrod;
   text-align: center;
+  align-items: center;
   font-family: "Bangers", cursive;
   font-size: 30px;
   width: 320px;
   height: 550px;
-  float: left;
+  /* float: left; */
   margin-left: auto;
   margin-right: auto;
 }
