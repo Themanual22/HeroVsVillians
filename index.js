@@ -81,12 +81,12 @@ loadPage()
 //basically we want to write 2 functions that grab a random send it to the spaces we decide in the browswer:
 
 
-	function loadHero(displayHero){
-        const heroStats = document.createElement("div")
-        heroStats.id = `stats ${"powerstats"}`
-        console.log(displayHero.powerstats.intelligence)
-       const {intelligence, combat, durability, power, speed, strength} = displayHero.powerstats
-        intelligence.append(intelligence)
+	 function loadHero(displayHero){
+    //     const heroStats = document.createElement("div")
+    //     heroStats.id = `stats ${"powerstats"}`
+    //     console.log(displayHero.powerstats.intelligence)
+    //    const {intelligence, combat, durability, power, speed, strength} = displayHero.powerstats
+    //     intelligence.append(intelligence)
         
 
         // const heroStats = displayHero.powerstats
