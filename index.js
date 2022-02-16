@@ -13,7 +13,6 @@ fetch("https://superhero-search.p.rapidapi.com/api/heroes",{
 }
 
 function renderHeros(heroArray){
-	//console.log(heroArray)
 	const heroList = document.getElementById('hero-list')
 	heroArray.forEach(hero => {
 		
@@ -86,7 +85,19 @@ loadPage()
 
 
 	function loadHero(displayHero){
-		
+        const heroStats = document.createElement("div")
+        heroStats.id = `stats ${"powerstats"}`
+        console.log(displayHero.powerstats.intelligence)
+       const {intelligence, combat, durability, power, speed, strength} = displayHero.powerstats
+        intelligence.append(intelligence)
+        
+
+        // const heroStats = displayHero.powerstats
+        // const heroStatsId = querySelector(".hero-stats")
+        // let (stat in `.heroStats`); {
+        //     heroStatsId.innerText = stat[".hero-stats"] ///this is where we are:
+        
+
 		const heroImgDisplay = document.querySelector(".hero-image")
 		const heroNameDisplay = document.querySelector(".hero-name")
 		heroNameDisplay.innerText = displayHero.name
