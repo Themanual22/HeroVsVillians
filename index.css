@@ -7,12 +7,28 @@ body {
 
 li {
   font-size: 25px;
-  letter-spacing: 5;
+  letter-spacing: 10;
   text-align: left;
 }
-
-Img {
+#div.hero-display {
+  position: absolute;
+  right: 200px;
+}
+#villian-display {
+}
+h4 {
   position: relative;
+  color: white;
+  text-shadow: 2px 2px blue;
+  font-family: "Bangers", cursive;
+  font-size: 45px;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+Img {
+  position: center;
   border-radius: 55px;
   width: 5;
   height: 7;
@@ -21,7 +37,9 @@ Img {
 }
 h1 {
   text-align: center;
-  position: relative;
+  position: absolute;
+  left: 10px;
+  top: 110px;
   font-family: "Bangers", cursive;
   color: white;
   text-shadow: 2px 2px blue;
@@ -37,9 +55,9 @@ h1 {
 }
 
 h3 {
-  float: right;
-  position: relative;
-  top: -40px;
+  position: absolute;
+  right: 10px;
+  top: 100px;
   text-align: center;
   font-family: "Bangers", cursive;
   color: white;
@@ -53,19 +71,8 @@ h3 {
   margin-left: 10px;
 }
 
-h4 {
-  float: right;
-  color: white;
-  text-shadow: 2px 2px blue;
-  font-family: "Bangers", cursive;
-  font-size: 45px;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 h2 {
+  position: static;
   color: white;
   text-shadow: 2px 2px blue;
   font-family: "Bangers", cursive;
