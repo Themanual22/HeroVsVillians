@@ -110,12 +110,22 @@ loadPage()
 		villainNameDisplay.innerText = displayVillain.name
 		villainImgDisplay.setAttribute("src", displayVillain.images.md)
 		villainImgDisplay.setAttribute("id", displayVillain.id)
-		
-    }
+			
+		let btn = document.createElement("button")
+			btn.addEventListener('click', handleLike)
+			btn.textContent = 'Like'
 
-    function Likebutton(){
-        
-    
+			let heroDiv = document.createElement('div')
+			heroDiv.append(btn)
+		}
+    function handleLike(e)    {
+    let iSpan = e.target.parentElement.querySelector('.like-span')
+  let number = parseInt(iSpan.textContent)
+
+  let newNum =  number + 1
+  iSpan.textContent = newNum
+  
+}
 
 	/*const heroSearchId = document.getElementById('hero-search')
 
@@ -140,6 +150,6 @@ loadPage()
 
 	}
 	*/
-}
+
     
 
