@@ -5,16 +5,67 @@ body {
   background: radial-gradient(#a23982, #1f1013);
 }
 
-h1 {
+li {
+  font-size: 25px;
+  letter-spacing: 10;
+  text-align: left;
+}
+.villain-image {
   position: relative;
+  right: 300px;
+  top: -85px;
+  float: right;
+}
+.villain-name {
+  position: relative;
+  left: 790px;
+  bottom: -432px;
+  text-align: left;
+}
+
+h4 {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px blue;
+  font-family: "Bangers", cursive;
+  font-size: 45px;
+}
+.hero-image {
+  position: absolute;
+  left: 300px;
+}
+.hero-name {
+  position: relative;
+  bottom: -520px;
+  left: 300px;
+  text-align: left;
+}
+h2 {
+  position: relative;
+  color: white;
+  text-shadow: 2px 2px blue;
+  font-family: "Bangers", cursive;
+  font-size: 45px;
+}
+Img {
+  position: center;
+  border-radius: 55px;
+  width: 5;
+  height: 7;
+  margin: 5px;
+  vertical-align: middle;
+}
+h1 {
+  letter-spacing: 3px;
+  position: absolute;
+  left: 10px;
+  top: 110px;
   text-align: center;
   font-family: "Bangers", cursive;
   color: white;
   text-shadow: 2px 2px blue;
-  text-shadow: blue, 13;
   font-size: 40px;
-  float: left;
-  width: 225px;
+  width: 245px;
   height: 1350px;
   border: 3px solid white;
   border-radius: 50px;
@@ -22,122 +73,76 @@ h1 {
   margin-right: 10px;
 }
 
-li {
-  font-size: 25px;
-  letter-spacing: 5;
-  text-align: left;
-}
-
-Img {
-  border-radius: 55px;
-  width: 5;
-  height: 7;
-  margin: 5px;
-  vertical-align: middle;
-}
-div {
-  /* position: relative;
-  left: 200px; */
-  border: 15px solid white;
-  border-radius: 50px;
-  float: left;
-  /*inline: ;
-  float:right; */
-  width: 340px;
-  height: 400px;
-  animation: pulse 5s infinite;
-}
-/*div#villian-display { //errors out saying it is a empty ruleset
-}
-@keyframes pulse {
-  0% {
-    background-color: #001f3f;
-  }
-  100% {
-    background-color: #ff4136;
-  }
-}*/
-
 h3 {
+  letter-spacing: 3px;
+  position: absolute;
+  right: 10px;
+  top: 90px;
   text-align: center;
   font-family: "Bangers", cursive;
   color: white;
   text-shadow: 2px 2px blue;
   font-size: 40px;
-  align-items: center;
-  float: right;
-  width: 225px;
+  width: 235px;
   height: 1350px;
   border: 3px solid white;
   border-radius: 50px;
   padding: 10px;
-  margin-left: 10px;
-}
-h4 {
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px blue;
-  font-family: "Bangers", cursive;
-  font-size: 45px;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-h2 {
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px blue;
-  font-family: "Bangers", cursive;
-  font-size: 45px;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-#villain-display {
-  color: goldenrod;
-  text-align: center;
-  font-family: "Bangers", cursive;
-  font-size: 30px;
-  width: 320px;
-  height: 550px;
-  /* float: right; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  grid: block;
-}
-
-#hero-display {
-  color: goldenrod;
-  text-align: center;
-  align-items: center;
-  font-family: "Bangers", cursive;
-  font-size: 30px;
-  width: 320px;
-  height: 550px;
-  /* float: left; */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 p {
+  padding: 15px;
+  text-shadow: 2px 2px blue;
+  color: white;
   font-family: "Bangers", cursive;
   float: center;
-  font-size: 50px;
+  z-index: 5, 2;
+  font-size: 85px;
 }
 p.header {
-  position: relative;
-  text-shadow: 2px 2px blue;
+  position: Static;
+  text-shadow: 4px 4px blue;
   text-align: center;
   color: white;
   background-color: null;
 }
 
-div {
-  border: 10px solid white;
-  border-radius: 50px;
-  width: 320px;
-  border: 400px;
+ul {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+  width: 45px;
+  height: 45px;
+  background: null;
+  border-radius: 50%;
+  animation: grow 2.6s ease-in-out infinite;
+}
+@keyframes grow {
+  0%,
+  40%,
+  100% {
+    transform: scale(0.2);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+}
+
+ul li:nth-child(4) {
+  position: static;
+  color: rgb(207, 5, 5);
+  text-shadow: 6px 6px yellow;
+  font-size: 155px;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  animation-delay: -0.2s;
+  background: yellow;
+  box-shadow: 0 0 100px #4fc3f7;
 }
