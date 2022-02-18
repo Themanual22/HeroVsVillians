@@ -11,32 +11,41 @@ li {
   text-align: left;
 }
 .villain-image {
-  position: absolute;
+  position: relative;
   right: 300px;
-  
+  top: -85px;
+  float: right;
+}
+.villain-name {
+  position: relative;
+  left: 790px;
+  bottom: -432px;
+  text-align: left;
+}
+
+h4 {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px blue;
+  font-family: "Bangers", cursive;
+  font-size: 45px;
 }
 .hero-image {
   position: absolute;
   left: 300px;
 }
 .hero-name {
-  position: absolute;
-  right: 300px;
+  position: relative;
+  bottom: -520px;
+  left: 300px;
+  text-align: left;
 }
-.villain-name {
-  position: absolute;
-  right: 300px;
-}
-h4 {
+h2 {
   position: relative;
   color: white;
   text-shadow: 2px 2px blue;
   font-family: "Bangers", cursive;
   font-size: 45px;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 Img {
   position: center;
@@ -47,17 +56,16 @@ Img {
   vertical-align: middle;
 }
 h1 {
-  text-align: center;
+  letter-spacing: 3px;
   position: absolute;
   left: 10px;
   top: 110px;
+  text-align: center;
   font-family: "Bangers", cursive;
   color: white;
   text-shadow: 2px 2px blue;
-  text-shadow: blue, 13;
   font-size: 40px;
-  float: left;
-  width: 225px;
+  width: 245px;
   height: 1350px;
   border: 3px solid white;
   border-radius: 50px;
@@ -66,43 +74,74 @@ h1 {
 }
 
 h3 {
+  letter-spacing: 3px;
   position: absolute;
   right: 10px;
-  top: 100px;
+  top: 90px;
   text-align: center;
   font-family: "Bangers", cursive;
   color: white;
   text-shadow: 2px 2px blue;
   font-size: 40px;
-  width: 225px;
+  width: 235px;
   height: 1350px;
   border: 3px solid white;
   border-radius: 50px;
   padding: 10px;
-  margin-left: 10px;
-}
-
-h2 {
-  position: static;
-  color: white;
-  text-shadow: 2px 2px blue;
-  font-family: "Bangers", cursive;
-  font-size: 45px;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.25em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 p {
+  padding: 15px;
+  text-shadow: 2px 2px blue;
+  color: white;
   font-family: "Bangers", cursive;
   float: center;
-  font-size: 65px;
+  z-index: 5, 2;
+  font-size: 85px;
 }
 p.header {
-  position: relative;
+  position: Static;
   text-shadow: 4px 4px blue;
   text-align: center;
   color: white;
   background-color: null;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+  width: 45px;
+  height: 45px;
+  background: null;
+  border-radius: 50%;
+  animation: grow 2.6s ease-in-out infinite;
+}
+@keyframes grow {
+  0%,
+  40%,
+  100% {
+    transform: scale(0.2);
+  }
+  20% {
+    transform: scale(1.25);
+  }
+}
+
+ul li:nth-child(4) {
+  color: rgb(207, 5, 5);
+  text-shadow: 6px 6px yellow;
+  font-size: 155px;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  animation-delay: -0.2s;
+  background: yellow;
+  box-shadow: 0 0 100px #4fc3f7;
 }
