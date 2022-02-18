@@ -10,11 +10,22 @@ li {
   letter-spacing: 10;
   text-align: left;
 }
-#div.hero-display {
+.villain-image {
   position: absolute;
-  right: 200px;
+  right: 300px;
+  
 }
-#villian-display {
+.hero-image {
+  position: absolute;
+  left: 300px;
+}
+.hero-name {
+  position: absolute;
+  right: 300px;
+}
+.villain-name {
+  position: absolute;
+  right: 300px;
 }
 h4 {
   position: relative;
