@@ -136,6 +136,7 @@ ul li {
 }
 
 ul li:nth-child(4) {
+  position: static;
   color: rgb(207, 5, 5);
   text-shadow: 6px 6px yellow;
   font-size: 155px;
