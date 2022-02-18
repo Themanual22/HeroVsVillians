@@ -72,7 +72,13 @@ h1 {
   padding: 10px;
   margin-right: 10px;
 }
-
+button#refresh-hero {
+  font-family: "Bangers", cursive;
+  border: 2px solid white;
+}
+button#refresh-villian {
+  border: 4px solid white;
+}
 h3 {
   letter-spacing: 3px;
   position: absolute;
