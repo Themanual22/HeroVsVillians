@@ -74,10 +74,23 @@ h1 {
 }
 button#refresh-hero {
   font-family: "Bangers", cursive;
+  color: yellow;
+  font-size: 30px;
   border: 2px solid white;
+  text-shadow: 2px 2px red;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 2px;
 }
-button#refresh-villian {
-  border: 4px solid white;
+button#refresh-villains {
+  font-family: "Bangers", cursive;
+  color: yellow;
+  font-size: 30px;
+  border: 2px solid white;
+  text-shadow: 2px 2px red;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 2px;
 }
 h3 {
   letter-spacing: 3px;
@@ -144,7 +157,7 @@ ul li {
 ul li:nth-child(4) {
   position: static;
   color: rgb(207, 5, 5);
-  text-shadow: 6px 6px yellow;
+  text-shadow: 10px 10px yellow;
   font-size: 155px;
   text-align: center;
   font-family: "Bangers", cursive;

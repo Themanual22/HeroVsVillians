@@ -11,14 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		.then(response => response.json())
 		.then(data => renderHeros(data))
 	}
-
 	function renderHeros(heroArray){
 		const heroList = document.getElementById('hero-list')
 		heroArray.forEach(hero => {
 			
 			const heroLi = document.createElement('li')
 			heroLi.textContent = hero.name
-			
 			const heroImg = document.createElement('img')
 			heroImg.setAttribute("src",hero.images.xs)
 			heroImg.setAttribute("id", hero.name)
@@ -117,8 +115,14 @@ document.addEventListener("DOMContentLoaded", function() {
 		heroList.innerHTML = ""
 		fetchHeros();
 	})
-  
-  
+	const villainRefresh = document.getElementById("refresh-villains")
+    villainRefresh.addEventListener("click", function() {
+        const villainList = document.getElementById("villain-list")
+        villainList.innerHTML = ""
+        fetchVillains();
+    })
+
+	
 	function loadPage(){
 		fetchHeros()
 		fetchVillains()
